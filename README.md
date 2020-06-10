@@ -1,12 +1,12 @@
-#Sentiment Analyzer
+# Sentiment Analyzer
 
 Analyze the sentiment of a given setence.
 
-##Getting Started
+## Getting Started
 You need to install all the webpack plugins detailed behind on installing section, then open the file index.html located in Dist folder, wich will be created after the Installing steps.
 
 
-###Prerequisites
+### Prerequisites
 Install the following:
   npm
   webpack
@@ -16,7 +16,7 @@ Install the following:
   CSS-loader
   SASS-loader
 
-###Installing
+### Installing
 1.- You need to install all the webpack plugins detailed behind.
 2.- On your terminal open the folder of this project
 3.- Run the command "npm run build-dev"
@@ -25,13 +25,13 @@ Install the following:
 6.- Start the local server to make the API calls, open the server folder located ar src/server and form your terminal type the command "node server.js"
 7.- The APP is ready to work, have fun!!
 
-##Running test
+## Running test
 From terminal type "npm run test"
 Two functions will be tested
 
-#Build With
+# Build With
 npm
 webpack
 
-#Versioning
+# Versioning
 1.0
