@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.78% </span>
+                <span class="strong">5.26% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/18</span>
+                <span class='fraction'>1/19</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.78% </span>
+                <span class="strong">5.26% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/18</span>
+                <span class='fraction'>1/19</span>
             </div>
         
             
@@ -103,7 +103,10 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -111,6 +114,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -120,7 +125,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,8 +136,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -139,8 +143,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -156,17 +162,20 @@ function <span class="fstat-no" title="function not covered" >handleSubmit(</spa
 &nbsp;
     // check what text was put into the form field
     let formText = <span class="cstat-no" title="statement not covered" >document.getElementById('name').value</span>
-<span class="cstat-no" title="statement not covered" >    Client.checkForName(formText)</span>
+<span class="cstat-no" title="statement not covered" >    console.log(formText.length);</span>
+<span class="cstat-no" title="statement not covered" >    Client.checkForInput(formText)</span>
+      
     //convert formText to object
     const newData = <span class="cstat-no" title="statement not covered" >{ formText }</span>
 <span class="cstat-no" title="statement not covered" >    Client.sendFormText(newData)</span>
     .then(<span class="fstat-no" title="function not covered" >fu</span>nction(){
 <span class="cstat-no" title="statement not covered" >        Client.updateUI();</span>
     })
+    
  }
  
-async function sendFormText(newData) {
-    const response = await fetch( 'http://localhost:8081', {
+async function <span class="fstat-no" title="function not covered" >sendFormText(</span>newData) {
+    const response = <span class="cstat-no" title="statement not covered" >await fetch( 'http://localhost:8081', {</span>
         method: 'POST', 
         credentials: 'same-origin',
         headers: {
@@ -176,8 +185,8 @@ async function sendFormText(newData) {
         body: JSON.stringify(newData),
       });
   
-        try {
-          const newData = await response.json();
+<span class="cstat-no" title="statement not covered" >        try {</span>
+          const newData = <span class="cstat-no" title="statement not covered" >await response.json();</span>
 <span class="cstat-no" title="statement not covered" >          console.log(newData);</span>
 <span class="cstat-no" title="statement not covered" >          apiResponse.polarity = newData.polarity;</span>
 <span class="cstat-no" title="statement not covered" >          apiResponse.subjectivity = newData.subjectivity;</span>
@@ -186,7 +195,7 @@ async function sendFormText(newData) {
 <span class="cstat-no" title="statement not covered" >          apiResponse.subjectivity_confidence = newData.subjectivity_confidence;</span>
 <span class="cstat-no" title="statement not covered" >          return newData;</span>
         }catch(error) {
-        console.log("error", error);
+<span class="cstat-no" title="statement not covered" >        console.log("error", error);</span>
         }
 }
 &nbsp;
@@ -202,7 +211,7 @@ export { apiResponse }</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Jun 10 2020 12:11:45 GMT+0200 (GMT+02:00)
+                at Wed Jun 10 2020 16:19:35 GMT+0200 (GMT+02:00)
             </div>
         </div>
         <script src="prettify.js"></script>

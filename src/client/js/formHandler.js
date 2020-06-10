@@ -5,13 +5,16 @@ function handleSubmit(event) {
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
-    Client.checkForName(formText)
+    console.log(formText.length);
+    Client.checkForInput(formText)
+      
     //convert formText to object
     const newData = { formText }
     Client.sendFormText(newData)
     .then(function(){
         Client.updateUI();
     })
+    
  }
  
 async function sendFormText(newData) {

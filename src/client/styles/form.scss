@@ -16,6 +16,10 @@ input {
     font-family: $font;
     height: 60px;
     border-radius: 10px;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .button {

@@ -1,4 +1,5 @@
-import { checkForName } from './js/nameChecker'
+import { checkForInput } from './js/textChecker'
+import { showError } from './js/textChecker'
 import { handleSubmit } from './js/formHandler'
 import { sendFormText } from './js/formHandler'
 import { updateUI } from './js/updateUI'
@@ -12,7 +13,8 @@ import './styles/header.scss'
 
 
 export {
-    checkForName,
+    checkForInput,
+    showError,
     handleSubmit,
     sendFormText,
     updateUI,

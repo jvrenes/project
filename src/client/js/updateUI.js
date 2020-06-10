@@ -1,5 +1,5 @@
 
-
+//Updates the interface to show the results from the API consult
 function updateUI(){
     console.log(":::UPDATING UI:::")
     
@@ -12,7 +12,7 @@ function updateUI(){
     
     
     
-    //Create the p elements
+    //Create the p elements for results
     const polarity = document.createElement("p")
     polarity.innerHTML = ("Polarity: " + Client.apiResponse.polarity)
     resultField.appendChild(polarity)
