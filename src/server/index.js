@@ -75,15 +75,8 @@ async function callAPI(requestQuery, res) {
           apiResponse.subjectivity_confidence = newEntry.subjectivity_confidence;
           console.log(apiResponse);
           res.send(apiResponse);
+        } else {
+          alert(":::Api connection error:::");
         }
       })   
 }
-
-
-
-
-// let newEntry = req.body;
-//     projectData.temperature = newEntry.temperature;
-//     projectData.date = newEntry.date;
-//     projectData.feelings = newEntry.feelings;
-//     console.log(projectData);

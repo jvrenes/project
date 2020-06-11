@@ -2,7 +2,7 @@ import { checkForInput } from './js/textChecker'
 import { showError } from './js/textChecker'
 import { handleSubmit } from './js/formHandler'
 import { sendFormText } from './js/formHandler'
-import { updateUI } from './js/updateUI'
+import { updateUI } from './js/formHandler'
 import { apiResponse } from './js/formHandler'
 
 import './styles/resets.scss'
