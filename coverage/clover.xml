@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1591888899227" clover="3.2.0">
-  <project timestamp="1591888899228" name="All files">
-    <metrics statements="46" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="2" elements="56" coveredelements="12" complexity="0" loc="46" ncloc="46" packages="1" files="2" classes="2"/>
+<coverage generated="1591893621362" clover="3.2.0">
+  <project timestamp="1591893621362" name="All files">
+    <metrics statements="46" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="1" elements="56" coveredelements="7" complexity="0" loc="46" ncloc="46" packages="1" files="2" classes="2"/>
     <file name="formHandler.js" path="/Users/madafaca/Desktop/project-master/src/client/js/formHandler.js">
-      <metrics statements="37" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <metrics statements="37" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
       <line num="7" count="0" type="stmt"/>
@@ -12,9 +12,9 @@
       <line num="12" count="0" type="stmt"/>
       <line num="13" count="0" type="stmt"/>
       <line num="15" count="0" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
       <line num="33" count="0" type="stmt"/>
       <line num="34" count="0" type="stmt"/>
       <line num="35" count="0" type="stmt"/>
@@ -22,7 +22,7 @@
       <line num="37" count="0" type="stmt"/>
       <line num="38" count="0" type="stmt"/>
       <line num="39" count="0" type="stmt"/>
-      <line num="41" count="1" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
       <line num="47" count="0" type="stmt"/>
       <line num="49" count="0" type="stmt"/>
       <line num="50" count="0" type="stmt"/>
