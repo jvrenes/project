@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-dotenv.config({ path: '../../.env'});
+dotenv.config({ path: './.env'});
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cors())
 
-app.use(express.static('../../dist'))
+app.use(express.static('./dist'))
 
 console.log(__dirname)
 
@@ -35,7 +35,7 @@ apiResponse = { };
 
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('../../dist/index.html'))
+    res.sendFile(path.resolve('./dist/index.html'))
 })
 
 // designates what port the app will listen to for incoming requests
